@@ -1,2 +1,0 @@
-/pickett_centaur/software/STAR/STAR --genomeSAindexNbases 11 --runThreadN 10 --runMode genomeGenerate --genomeDir /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/genome_directory_juglans_regia --genomeFastaFiles /pickett_centaur/project/tcd_control_rnaseq/raw_data/GCF_001411555.2_Walnut_2.0_genomic.fna --genomeChrBinNbits=10 --sjdbGTFfile /pickett_centaur/project/tcd_control_rnaseq/raw_data/GCF_001411555.2_Walnut_2.0_genomic.gff --sjdbGTFtagExonParentTranscript Parent --sjdbOverhang 149
-
