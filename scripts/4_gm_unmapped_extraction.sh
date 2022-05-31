@@ -11,6 +11,7 @@ samtools view -b -f 12 -F 256 $file > /pickett_centaur/project/tcd_control_rnase
 samtools merge /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.unmapped.bam /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.r1.unmap.bam /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.r2.unmap.bam /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.r1r2.unmap.bam
 samtools sort -n /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.unmapped.bam -o /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.unmapped.sorted.bam
 bedtools bamtofastq -i /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.unmapped.sorted.bam -fq /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.gm.unmapped.1.fastq.gz -fq2 /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/$name.gm.unmapped.2.fastq
+rm //pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/*.bam
 gzip /pickett_centaur/project/tcd_control_rnaseq/analyses/2_star/gm_unmapped_fastq/*.fastq
 
 done
